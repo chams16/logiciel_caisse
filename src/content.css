@@ -260,3 +260,8 @@
     cursor: pointer;
     padding-left: 25%;
 }
+.choice{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
