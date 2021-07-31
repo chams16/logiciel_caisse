@@ -1,0 +1,37 @@
+.name{
+    display: inline-flex;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.facturebtn{
+    display: inline-flex;
+    padding-left: 80px;
+}
+.remove{
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.add{
+    background-color: green;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.factureprice{
+    display: inline-flex;
+    padding-left: 100px;
+    font-size: 20px;
+    font-weight: bold;
+}
