@@ -5,6 +5,9 @@ import './content.css';
 import './Facture.css'
 import { FaTrash, FaRegCopy } from 'react-icons/fa';
 
+import jsPDF from 'jspdf';
+import 'jspdf-autotable'
+
 
 export default function Facture(props){
     const {cartItem, onAdd, onRemove,Removeall}=props;
@@ -12,7 +15,13 @@ export default function Facture(props){
     const totalPrice = itemsPrice + "  TND ";
     const x = "cart is Empty"
 
- 
+
+    const print=()=>{
+        const doc = new jsPDF()
+        cartItem.map(item=>(
+            console.log(item)
+        ))
+    }
 
     return (
         <Card.Body>
@@ -51,7 +60,7 @@ export default function Facture(props){
                                         </div>
 
                                         <div className="factureprice">
-                                        {item.qty} x ${item.price}
+                                        {item.qty} x {item.price} TND
                                         </div>
                                     </div>
                                     ))}
@@ -61,7 +70,9 @@ export default function Facture(props){
                             <Button  className="delet" onClick={()=> Removeall(cartItem)}><div className="trash"><FaTrash/></div>SUPPRIMER</Button>
                          </span>
                          <span>
-                            <Button  className="wait" ><div className="trash"><FaRegCopy/></div>PRINT</Button>
+
+                             
+                            <Button  className="wait" ><div className="trash" onClick={print}><FaRegCopy/></div>PRINT</Button>
                             
                          </span>
                       </Row>

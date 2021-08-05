@@ -84,6 +84,7 @@ export default function MainContent() {
         const exist = cartItem.find((x) => x.id === product.id);
         if (exist.qty === 1) {
           setCartItem(cartItem.filter((x) => x.id !== product.id));
+          alert('Voulez vous vraiment eliminer cet produit?')
         } else {
           setCartItem(
             cartItem.map((x) =>
@@ -144,7 +145,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(taco)}> 
                                 <Card.Title className="titleCard">{taco.name}</Card.Title>
-                                <Card.Text className="textCard">{taco.price} €</Card.Text>
+                                <Card.Text className="textCard">{taco.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={taco.name} src={taco.img} />
                             </Card.Body>
@@ -158,7 +159,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(sandwich)}> 
                                 <Card.Title className="titleCard">{sandwich.name}</Card.Title>
-                                <Card.Text className="textCard">{sandwich.price} €</Card.Text>
+                                <Card.Text className="textCard">{sandwich.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={sandwich.name} src={sandwich.img} />
                             </Card.Body>
@@ -172,7 +173,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(burger)}> 
                                 <Card.Title className="titleCard">{burger.name}</Card.Title>
-                                <Card.Text className="textCard">{burger.price} €</Card.Text>
+                                <Card.Text className="textCard">{burger.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={burger.name} src={burger.img} />
                             </Card.Body>
@@ -186,7 +187,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(extra)}> 
                                 <Card.Title className="titleCard">{extra.name}</Card.Title>
-                                <Card.Text className="textCard">{extra.price} €</Card.Text>
+                                <Card.Text className="textCard">{extra.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={extra.name} src={extra.img} />
                             </Card.Body>
@@ -200,7 +201,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(salad)}> 
                                 <Card.Title className="titleCard">{salad.name}</Card.Title>
-                                <Card.Text className="textCard">{salad.price} €</Card.Text>
+                                <Card.Text className="textCard">{salad.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={salad.name} src={salad.img} />
                             </Card.Body>
@@ -214,7 +215,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(urban)}> 
                                 <Card.Title className="titleCard">{urban.name}</Card.Title>
-                                <Card.Text className="textCard">{urban.price} €</Card.Text>
+                                <Card.Text className="textCard">{urban.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={urban.name} src={urban.img} />
                             </Card.Body>
@@ -228,7 +229,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(boisson)}> 
                                 <Card.Title className="titleCard">{boisson.name} <br/>{boisson.size}</Card.Title>
-                                <Card.Text className="textCard">{boisson.price} €</Card.Text>
+                                <Card.Text className="textCard">{boisson.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={boisson.name} src={boisson.img} />
                             </Card.Body>
@@ -242,7 +243,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(dessert)}> 
                                 <Card.Title className="titleCard">{dessert.name} </Card.Title>
-                                <Card.Text className="textCard">{dessert.price} €</Card.Text>
+                                <Card.Text className="textCard">{dessert.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={dessert.name} src={dessert.img} />
                             </Card.Body>
@@ -256,7 +257,7 @@ export default function MainContent() {
                             <Card.Body>
                                 <Button className="btnAdd" onClick={()=> onAdd(milkshake)}> 
                                 <Card.Title className="titleCard">{milkshake.name} </Card.Title>
-                                <Card.Text className="textCard">{milkshake.price} €</Card.Text>
+                                <Card.Text className="textCard">{milkshake.price} TND</Card.Text>
                                 </Button>
                                 <img className="imgCard" alt={milkshake.name} src={milkshake.img} />
                             </Card.Body>

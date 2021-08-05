@@ -184,10 +184,9 @@
      margin-right: 2px;
 }
 .imgCard{
-    width: 86px;
+    width: 80px;
     height: 98px;
-    padding-left: 4px;
-    
+    margin-left: 5px;
 }
 .titleCard{
     color: white;
