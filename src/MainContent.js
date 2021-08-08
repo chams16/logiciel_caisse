@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
+import Swal from 'sweetalert2';
 import './content.css';
 import Facture from './Facture';
 
@@ -67,6 +68,7 @@ export default function MainContent() {
 
     const [choice, setchoice] = useState('')
     const [cartItem, setCartItem] = useState([])
+    const [show, setShow] = useState(false);
 
     const onAdd = (product) => {
         const exist = cartItem.find((x) => x.id === product.id);
@@ -83,8 +85,14 @@ export default function MainContent() {
     const onRemove = (product) => {
         const exist = cartItem.find((x) => x.id === product.id);
         if (exist.qty === 1) {
+            Swal.fire({
+                title: 'warning!',
+                text: 'Do you want to remove this item',
+                icon: 'warning',
+                confirmButtonText: 'continue'
+              })
           setCartItem(cartItem.filter((x) => x.id !== product.id));
-          alert('Voulez vous vraiment eliminer cet produit?')
+          
         } else {
           setCartItem(
             cartItem.map((x) =>
@@ -95,11 +103,21 @@ export default function MainContent() {
     };
 
     const Removeall=(cartItem)=>{
+        Swal.fire({
+            title: 'warning!',
+            text: 'Do you want to clear the facture',
+            icon: 'warning',
+            confirmButtonText: 'remove'
+          })
+         
+          
         setCartItem([])
     }
 
   return (
-    <Row className="ligne">
+<div>
+
+<Row className="ligne">
         <Col className="colone1 d-inline p-2">
         <Card className="firstcard">
         <Card.Body >
@@ -276,6 +294,9 @@ export default function MainContent() {
        
         </Col>
     </Row>
+
+   
+</div>
     
   );
 }

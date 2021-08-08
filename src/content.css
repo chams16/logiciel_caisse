@@ -24,7 +24,7 @@
     width: 80px;
     height: 80px;
     margin-top: 13px;
-    margin-left: 13px;
+    margin-left: 20px;
     margin-bottom: 13px;
     font-size: 12px;
     border: none;
@@ -102,15 +102,15 @@
     height: 80px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 13px;
+    margin-left: 20px;
     cursor: pointer;
 }
 .colone1{
-    height: 530px;
+    height: 590px;
     display: flex;
 }
 .colone2{
-    height: 570px;
+    height: 675px;
     display: flex;
 }
 .facture{
@@ -120,14 +120,14 @@
     background-color: rgb(55, 153, 245);
     color: white;
     height: 50px;
-    width: 150px;
+    width: 170px;
     text-align: center;
     font-size: 20px;
     padding-top: 12px;
 }
 .price{
     height: 50px;
-    width: 361px;
+    width: 406px;
     border: none;
     text-align: center;
     padding-top: 8px;
@@ -139,7 +139,7 @@
     background-color: rgb(247, 34, 62);
     color: white;
     height: 50px;
-    width: 150px;
+    width: 170px;
     text-align: center;
     font-size: 23px;
     padding-top: 10px;
@@ -179,26 +179,30 @@
     
      margin:12px;
      background-color: red;
-     width: 90px;
-     height: 153px;
+     width: 100px;
+     height: 165px;
      margin-right: 2px;
 }
 .imgCard{
     width: 80px;
-    height: 98px;
-    margin-left: 5px;
+    height: 80px;
+    margin-left: 10px;
 }
 .titleCard{
     color: white;
     text-align: center;
     font-size: 11px;
-    padding-bottom: 0;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    display: inline-flex;
 }
 .textCard{
     color: white;
     text-align: center;
     font-size: 11px;
     padding-top: 0;
+    display: inline-flex;
+    padding-right: 5px;
 }
 .btnAdd, .btnAdd2{
     background-color: red;

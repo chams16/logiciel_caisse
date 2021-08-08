@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from './Modal'
 
 import { Button, Card, FormControl, InputGroup, Row } from 'react-bootstrap';
 import './content.css';
@@ -78,5 +79,6 @@ export default function Facture(props){
                       </Row>
      
         </Card.Body>
+       
     );
 }
