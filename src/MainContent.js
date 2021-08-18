@@ -68,7 +68,6 @@ export default function MainContent() {
 
     const [choice, setchoice] = useState('')
     const [cartItem, setCartItem] = useState([])
-    const [show, setShow] = useState(false);
 
     const onAdd = (product) => {
         const exist = cartItem.find((x) => x.id === product.id);

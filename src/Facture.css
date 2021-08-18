@@ -1,5 +1,5 @@
 .name{
-    display: inline-flex;
+    display: block;
     text-align: left;
     font-size: 20px;
     padding-left: 20px;
@@ -8,9 +8,10 @@
 }
 .facturebtn{
     display: inline-flex;
+    margin-left: 90px;
 }
 .remove{
-    margin-left: 80px;
+    
     background-color: red;
     color: white;
     border: none;
@@ -20,6 +21,7 @@
     font-weight: bold;
 }
 .add{
+    margin-left: 15px;
     background-color: green;
     color: white;
     border: none;
@@ -27,11 +29,50 @@
     height: 30px;
     font-size: 25px;
     font-weight: bold;
-    margin-left: 90px;
+    
 }
 .factureprice{
     display: inline-flex;
     padding-left: 50px;
     font-size: 20px;
     font-weight: bold;
+}
+.pricedata{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.price2{
+    height: 30px;
+    width: 300px;
+    border: none;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.restedata{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.reste{
+    height: 30px;
+    width: 300px;
+    border: none;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+th{
+    padding:10px;
+    color: rgb(23, 26, 182);
+    font-size: 20px;
+}
+td{
+    padding: 5px;
 }
